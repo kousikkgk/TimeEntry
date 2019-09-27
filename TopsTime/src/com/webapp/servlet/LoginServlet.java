@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -51,17 +52,27 @@ public class LoginServlet extends HttpServlet {
 	   while (rs.next()) {
 		// TO PASS THE USER ID TO HOME PAGE.
 		   String name = request.getParameter("uname");
-		   System.out.println(name);
+		   //System.out.println(name);
 		   HttpSession session=request.getSession(); 
 		   String nameDB=rs.getString(2);
 		   int id=rs.getInt(1);
-		   request.setAttribute("id",id);
-		   //request.setAttribute("name",nameDB);
-		   //RequestDispatcher rd = request.getRequestDispatcher("LoginServlet");
-		   //rd.forward(request,response);
-		   session.setAttribute("theName", nameDB );
+		   //System.out.println(id);
+		   
+		   
+				/*
+				 * String selectedItem; if(request.getParameter("proj")!=null) {
+				 * selectedItem=request.getParameter("proj");
+				 * session.setAttribute("proj",selectedItem); System.out.println(selectedItem);
+				 * }
+				 */
+		   
+		   session.setAttribute("id",id);
+		  //request.setAttribute("id",id);
+		   session.setAttribute("name", nameDB );
 		  // String nameDB=rs.getString(2);
-        	response.sendRedirect("./home.jsp");
+		   ServletContext context= getServletContext();
+		   RequestDispatcher rd= context.getRequestDispatcher("/home.jsp");
+		   rd.forward(request, response);
         	   return;
            }
         response.sendRedirect("./error.html");

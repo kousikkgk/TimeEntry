@@ -12,7 +12,6 @@
     <servlet-name>loginServlet</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
- 
   <servlet>
     <description></description>
     <display-name>EntryServlet</display-name>
@@ -23,4 +22,67 @@
     <servlet-name>EntryServlet</servlet-name>
     <url-pattern>/entin</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HomeServlet</display-name>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>com.webapp.servlet.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProjectName</display-name>
+    <servlet-name>ProjectName</servlet-name>
+    <servlet-class>com.webapp.servlet.ProjectName</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProjectName</servlet-name>
+    <url-pattern>/projname</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ProcessServlet</display-name>
+    <servlet-name>ProcessServlet</servlet-name>
+    <servlet-class>com.webapp.servlet.ProcessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProcessServlet</servlet-name>
+    <url-pattern>/procsname</url-pattern>
+  </servlet-mapping> 
+  <servlet>
+    <description></description>
+    <display-name>WorkRequestServlet</display-name>
+    <servlet-name>WorkRequestServlet</servlet-name>
+    <servlet-class>com.webapp.servlet.WorkRequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WorkRequestServlet</servlet-name>
+    <url-pattern>/wrkreq</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>ActivityServlet</display-name>
+    <servlet-name>ActivityServlet</servlet-name>
+    <servlet-class>com.webapp.servlet.ActivityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ActivityServlet</servlet-name>
+    <url-pattern>/activity</url-pattern>
+  </servlet-mapping>
+  <!--  
+  <servlet>
+    <description></description>
+    <display-name>WorkUnitServlet</display-name>
+    <servlet-name>WorkUnitServlet</servlet-name>
+    <servlet-class>com.webapp.servlet.WorkUnitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WorkUnitServlet</servlet-name>
+    <url-pattern>/wrkunit</url-pattern>
+  </servlet-mapping> -->
 </web-app>

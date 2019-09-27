@@ -1,4 +1,4 @@
-html, body{
+ html, body{
 	padding:0px;
 	margin:1px;
 	height:100%;
@@ -6,7 +6,7 @@ html, body{
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
-
+ 
 #header{
 	height:60px;
 	background-image:url(./header.jpg);
@@ -14,6 +14,10 @@ html, body{
 	height:70px;
 	background-repeat: repeat-y;
 	background-size: 100% 100%;
+}
+#entrydiv
+{
+	:none;
 }
 #container{
 	align:center;
@@ -78,4 +82,80 @@ table, th, td {
 	background-repeat: repeat-y;
 	background-size: 100% 100%;
 
+}
+input[type=button],input[type=reset],input[type=submit]
+{
+	 background-color: #008230;
+    background-image: none;
+    border-color: transparent;
+    color: #fff;
+    text-shadow: none;
+    cursor: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    
+} 
+select,input[type=date] {
+  text-align: left;
+    color: rgba(0,0,0,.8);
+    background-color: #fcfcfd;
+    border-style: solid;
+    border-color: #e5e6e6;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    height: 2.28571rem;
+    height: 3rem;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-clip: padding-box;
+    text-overflow: ellipsis;
+    position: relative;
+    display: inline-block;
+    max-width: 30em;
+    min-width: 8em;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type=number]  {
+		
+  text-align: left;
+    color: rgba(0,0,0,.8);
+    background-color: #fcfcfd;
+    border-style: solid;
+    border-color: #e5e6e6;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 2px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    height: 2.28571rem;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-clip: padding-box;
+    text-overflow: ellipsis;
+    position: relative;
+    display: inline-block;
+    max-width: 20em;
+    min-width: 8em;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="number"]::placeholder {  
+ 
+                text-align: center; 
 }
